@@ -2,26 +2,40 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 $gray: #F4F4F4;
+$white:white;
+$yellow:#DACB3F;
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 body {
-  background: $gray; // Using this variable
+  background: $gray;
+  font-family: 'Oswald', sans-serif; // Using this variable
 }
 
-.banner {
-  background: red;
-  h1 {
-    font-size: 50px;
-  }
+// .banner {
+//   background: red;
+//   h1 {
+//     font-size: 50px;
+//   }
+// }
+
+// a {
+//   color: grey;
+//   &:hover {
+//     color: black;
+//   }
+// }
+
+.yourQuestion {
+  background: $white;
+  border-left: 4px solid #4b3949;
+  padding-left: 10px;
+  padding: 5px 10px;
+  margin-bottom: 5px;
 }
 
-a {
-  color: grey;
-  &:hover {
-    color: black;
-  }
-}
-
-.putblank {
-  padding:10px;
-  width: 40vw;
+.yourAnswer {
+  background:$yellow ;
+  border-left: 4px solid #4b3949;
+  padding: 5px 10px;
 }
